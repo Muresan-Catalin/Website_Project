@@ -1,0 +1,80 @@
+.programare{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+}
+
+.btn a{
+  border-radius: 25px;
+  background: #750d75;
+  padding: 20px 60px 20px 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  background:#380638;
+}
+
+.orar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+}
+
+
+.contact{
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2{
+  font-size: 4em;
+  text-align: center;
+}
+
+.contact p{
+  font-family: 'Andika New Basic', sans-serif;
+  line-height: 1.5;
+  font-size: 2em;
+  padding: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.locatie{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.harta{
+  grid-column: 2/3;
+}
+
+[data-scroll] {
+  transition: all 2s;
+}
+
+[data-scroll="in"]{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll="out"]{
+  opacity: 0;
+  transform: translateY(-50px);
+}

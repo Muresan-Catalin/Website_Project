@@ -1,0 +1,53 @@
+.cards{
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 50px;
+  z-index: 0;
+}
+
+.card{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.card p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.card__img{
+  width: 100%;
+  display: block;
+}
+
+.card__content{
+  line-height: 1.5;
+  font-size: 1.1em;
+  padding: 25px;
+  padding-top: 40px;
+  background: #fafafa;
+}
+
+.card__content > p:first-of-type{
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type{
+  margin-bottom: 0;
+}
+
+[data-scroll] {
+  transition: all 1s;
+}
+
+[data-scroll="in"]{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll="out"]{
+  opacity: 0;
+  transform: translateY(-50px);
+}
